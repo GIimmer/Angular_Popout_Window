@@ -1,0 +1,15 @@
+div.wrapper {
+  padding: 5px;
+  text-align: center;
+
+  h2 {
+    font-size: 36px;
+  }
+
+  div.buttonsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}

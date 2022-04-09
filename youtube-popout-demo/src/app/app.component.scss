@@ -1,0 +1,32 @@
+div.body {
+  display: flex;
+  flex-direction: row;
+
+  div.sidebar {
+    display: inline-block;
+    flex-grow: 0;
+    width: 275px;
+    min-width: 275px;
+    height: 100vh;
+    outline: 2px solid grey;
+
+    div.clockWrapper {
+      width: 100%;
+      border-bottom: 2px solid grey;
+      // background-color: rgb(31, 31, 31);
+    }
+
+    div.sidenavWrapper {
+      width: 100%;
+    }
+  }
+
+  div.routerOutletWrapper {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+
+    
+  }
+}

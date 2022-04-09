@@ -1,0 +1,14 @@
+<div class="body">
+  <div class="sidebar">
+    <div class="clockWrapper">
+      <button mat-flat-button (click)="clock.addFive()">+5</button>
+      <app-clock #clock></app-clock>
+    </div>
+    <div class="sidenavWrapper">
+      <app-sidenav></app-sidenav>
+    </div>
+  </div>
+  <div class="routerOutletWrapper">
+    <router-outlet></router-outlet>
+  </div>
+</div>
