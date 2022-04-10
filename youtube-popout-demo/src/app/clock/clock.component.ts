@@ -7,13 +7,18 @@ import { Component } from '@angular/core';
 })
 export class ClockComponent {
   currentTime: number = 0;
-  private interval: any;
+  interval: NodeJS.Timeout | null = null;
 
   onClickStart() {
     this.interval = setInterval(() => {
       this.currentTime += 1;
     },1000)
   };
+
+  onClickStop() {
+    clearInterval(this.interval as NodeJS.Timeout);
+    this.interval = null;
+  }
   
   onClickMinusTwoSeconds() {
     this.currentTime -= 2;
