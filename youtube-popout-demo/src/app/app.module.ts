@@ -10,7 +10,6 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { ClockComponent } from './clock/clock.component';
 import { TextDemoComponent } from './text-demo/text-demo.component';
 import { RandomColorGeneratorComponent } from './random-color-generator/random-color-generator.component';
-import { PopoutWindowModule } from 'angular-opinionated-popout-window';
 
 @NgModule({
   declarations: [
@@ -26,7 +25,6 @@ import { PopoutWindowModule } from 'angular-opinionated-popout-window';
     BrowserAnimationsModule,
     MatListModule,
     MatButtonModule,
-    PopoutWindowModule
   ],
   providers: [],
   bootstrap: [AppComponent]
